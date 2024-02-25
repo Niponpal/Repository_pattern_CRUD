@@ -1,0 +1,21 @@
+﻿@model SMS.ModelVm.SchoolVm
+@{
+}
+
+<form asp-action="CreateOrEdit" asp-controller="School" method="post">
+	<div class="mt-3">
+		<label asp-for="Name">Enter Your Name</label>
+		<input asp-for="Name" class="form-control" placeholder="Enter Your Name" />
+	</div>
+
+	<div class="mt-3">
+		<label asp-for="Age">Enter Your Age</label>
+		<input asp-for="Age" class="form-control" placeholder="Enter Your Age" />
+	</div>
+
+	<div class="mt-3">
+		<label asp-for="Address">Enter Your Address</label>
+		<input asp-for="Address" class="form-control" placeholder="Enter Your Address" />
+	</div>
+	<button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
